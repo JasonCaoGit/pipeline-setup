@@ -10,7 +10,7 @@ pipeline {
         IMAGE_REPO_NAME="project"
         //Do not edit the variable IMAGE_TAG. It uses the Jenkins job build ID as a tag for the new image.
         IMAGE_TAG="${env.BUILD_ID}"
-        //Do not edit REPOSITORY_URI.
+        //Do not edit REPOSITORY_URI. dasgaga
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
 	    registryCredential = "AWS"
 	    JOB_NAME = "Pipeline"
