@@ -7,7 +7,7 @@ pipeline {
 	    SERVICE_NAME="nodejs-srv-5"
 	    TASK_DEFINITION_NAME="nodejs"
 	    DESIRED_COUNT="1"
-        IMAGE_REPO_NAME="<REPLACE WITH ECR REPO NAME>"
+        IMAGE_REPO_NAME="project"
         //Do not edit the variable IMAGE_TAG. It uses the Jenkins job build ID as a tag for the new image.
         IMAGE_TAG="${env.BUILD_ID}"
         //Do not edit REPOSITORY_URI.
